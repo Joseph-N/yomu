@@ -3,13 +3,14 @@ require 'yomu/version'
 require 'net/http'
 require 'mime/types'
 require 'json'
+require 'time'
 
 require 'socket'
 require 'stringio'
 
 class Yomu
   GEMPATH = File.dirname(File.dirname(__FILE__))
-  JARPATH = File.join(Yomu::GEMPATH, 'jar', 'tika-app-1.11.jar')
+  JARPATH = File.join(Yomu::GEMPATH, 'jar', 'tika-app-1.24.1.jar')
   DEFAULT_SERVER_PORT = 9293 # an arbitrary, but perfectly cromulent, port
 
   @@server_port = nil
